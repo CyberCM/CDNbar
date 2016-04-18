@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>CDNery Example</title>
+        <title>CDNbar Example</title>
         <meta charset="UTF-8"> 
     </head>
     <body>
-    <h2>Hello CDNery</h2>
-    </body>
+    <h2>Hello CDNbar</h2>
     
-    <script src="./cdnbar.js"></script>
-    <script> 
-        cdn.load("jquery", "underscore.js", "vue", "Chart.js");
-    </script>
+    <button class="continue">Loading</button>
+    
+    </body> 
+    
+    <script src="./cdnbar.js"></script>  
+    <script>cdn.load("jquery", "underscore.js", "vue", "Chart.js");</script> 
+    <script>$( "button.continue" ).html( "Next Step..." );</script>
+    
 </html>
